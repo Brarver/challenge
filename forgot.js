@@ -210,20 +210,19 @@
 // console.log(findMultiples(3,21))
 
 
-function towerBuilder(floors) {
+// function towerBuilder(nFloors) {
+//   var tower = [];
+//   for (var i = 0; i < nFloors; i++) {
+//     tower.push(" ".repeat(nFloors - i - 1)
+//              + "*".repeat((i * 2)+ 1)
+//              + " ".repeat(nFloors - i - 1));
+//   }
+//   return tower;
+// }
 
-  var tower = [];
-  var level = '*';
-
-  for (var i = 0; i < floors; i++) {
-    tower.push(level);
-    level += '**';
-  }
-
-  return tower
+// console.log(towerBuilder(6))
+function topThreeWords(text) {
 
 }
-
-console.log(towerBuilder(6))
 
 
