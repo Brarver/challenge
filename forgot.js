@@ -167,10 +167,63 @@
 //   return 400/v
 // }
 
-function isDivisible(n, x, y) {
-  var bool
-  (n % x) + (n % y) === 0 ? bool = true : bool = false;
-  return bool
+// function isDivisible(n, x, y) {
+//   var bool
+//   (n % x) + (n % y) === 0 ? bool = true : bool = false;
+//   return bool
+// }
+
+// console.log(isDivisible(16, 2, 4))
+
+// function litres(time) {
+//   return Math.floor(time * .5)
+// }
+
+// console.log(litres(3))
+
+// function capitalizeWord(word) {
+//   return word.charAt(0).toUpperCase() 
+  
+// }
+
+// function capitalizeWord(word) {
+//   return word[0].toUpperCase() + word.substr(1);
+  
+// }
+
+// console.log(capitalizeWord('word'));
+
+// function findMultiples(integer, limit) {
+//   var array = [];
+//   var number = integer
+//   array.push(integer)
+//   for (var i = 0; i < limit; i++) {
+//     if (number + integer <= limit) {
+//       number = number + integer
+//       array.push(number)
+//     }
+//   }
+
+//   return array;
+// }
+
+// console.log(findMultiples(3,21))
+
+
+function towerBuilder(floors) {
+
+  var tower = [];
+  var level = '*';
+
+  for (var i = 0; i < floors; i++) {
+    tower.push(level);
+    level += '**';
+  }
+
+  return tower
+
 }
 
-console.log(isDivisible(16, 2, 4))
+console.log(towerBuilder(6))
+
+
